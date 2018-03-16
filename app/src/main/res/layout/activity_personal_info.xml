@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_black"
+    android:orientation="vertical">
+
+    <include layout="@layout/common_title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+
+        <ImageView
+            android:id="@+id/iv_personal_info_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/upload_head" />
+
+        <EditText
+            android:id="@+id/et_personal_info_nickname"
+            style="@style/register_et_style"
+            android:layout_width="wrap_content"
+            android:hint="@string/nickname" />
+
+        <View style="@style/line_et_style" />
+
+        <LinearLayout
+            android:id="@+id/ll_personal_info_birthday"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/tv_personal_info_birthday"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/birthday"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow_right" />
+        </LinearLayout>
+
+        <View style="@style/line_et_style" />
+
+        <LinearLayout
+            android:id="@+id/ll_personal_info_sex"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            android:paddingBottom="5dp">
+
+            <TextView
+                android:id="@+id/tv_personal_info_sex"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:text="@string/sex"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/arrow_right" />
+        </LinearLayout>
+
+        <View style="@style/line_et_style" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="end"
+            android:text="@string/personal_tips"
+            android:textColor="@color/grey_bfbfbf"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/btn_personal_info_next"
+            style="@style/btn_common_style"
+            android:layout_height="40dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/common_red_btn_selector"
+            android:text="@string/next_step" />
+    </LinearLayout>
+</LinearLayout>

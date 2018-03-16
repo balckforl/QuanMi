@@ -1,0 +1,46 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BaseAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">#0F0F1B</item>
+        <item name="colorPrimaryDark">#0F0F1B</item>
+        <item name="colorAccent">#0F0F1B</item>
+    </style>
+
+    <style name="btn_common_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">45dp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="line_title_style">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">2dp</item>
+        <item name="android:background">@color/theme_red</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="line_et_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/grey_bfbfbf</item>
+    </style>
+
+    <style name="register_et_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:layout_marginTop">30dp</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/grey_bfbfbf</item>
+        <item name="android:textColorHint">@color/grey_bfbfbf</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textCursorDrawable">@drawable/edit_cursor_color_shape</item>
+    </style>
+</resources>
