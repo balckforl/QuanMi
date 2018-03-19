@@ -8,7 +8,7 @@
     <string name="quick_login">快捷登录</string>
     <string name="telephone">手机号码</string>
     <string name="password">登录密码</string>
-    <string name="forget_password">忘记密码</string>
+    <string name="forget_password">忘记密码?</string>
 
     <string name="input_telephone">输入手机号码</string>
     <string name="input_password">输入密码</string>

@@ -2,20 +2,164 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/bg_black"
     android:orientation="vertical">
 
-    <Button
+    <ImageView
+        android:id="@+id/iv_login_back"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:paddingEnd="12dp"
+        android:paddingStart="12dp"
+        android:src="@mipmap/back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:paddingEnd="35dp"
+        android:paddingStart="35dp">
+
+        <LinearLayout
+            android:id="@+id/ll_login_password_login"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/password_login"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/view_password_login"
+                android:layout_width="25dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/theme_red" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_login_quick_login"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1.0"
+            android:gravity="center|bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/quick_login"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <View
+                android:id="@+id/view_quick_login"
+                android:layout_width="25dp"
+                android:layout_height="2dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/theme_red"
+                android:visibility="invisible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--密码登录-->
+    <LinearLayout
+        android:id="@+id/ll_login_password_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/login" />
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingEnd="25dp"
+        android:paddingStart="25dp">
+
+        <EditText
+            android:id="@+id/et_login_tel"
+            style="@style/register_et_style"
+            android:hint="@string/telephone"
+            android:inputType="phone" />
+
+        <View style="@style/line_et_style" />
+
+        <EditText
+            android:id="@+id/et_login_password"
+            style="@style/register_et_style"
+            android:hint="@string/password"
+            android:inputType="textPassword" />
+
+        <View style="@style/line_et_style" />
+
+        <TextView
+            android:id="@+id/tv_login_forget_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:paddingTop="10dp"
+            android:text="@string/forget_password"
+            android:textColor="@color/theme_red"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <!--快捷登录-->
+    <LinearLayout
+        android:id="@+id/ll_login_quick_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:paddingEnd="25dp"
+        android:paddingStart="25dp"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/et_login_quick_tel"
+            style="@style/register_et_style"
+            android:hint="@string/telephone"
+            android:inputType="phone" />
+
+        <View style="@style/line_et_style" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp">
+
+            <EditText
+                android:id="@+id/et_login_identify_code"
+                style="@style/register_et_style"
+                android:layout_toLeftOf="@+id/tv_login_send_identify_code"
+                android:hint="@string/identifying_code" />
+
+            <TextView
+                android:id="@+id/tv_login_send_identify_code"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="6dp"
+                android:background="@drawable/register_send_identify_code_selector"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/send_identifying_code"
+                android:textColor="@color/grey_bfbfbf"
+                android:textSize="13sp" />
+        </RelativeLayout>
+
+        <View style="@style/line_et_style" />
+    </LinearLayout>
 
     <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/login" />
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:id="@+id/btn_login"
+        style="@style/btn_common_style"
+        android:layout_height="40dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/common_grey_btn_selector"
         android:text="@string/login" />
 </LinearLayout>
